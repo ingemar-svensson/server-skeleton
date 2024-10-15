@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: devops/installs.sh
+      timeout: 3600
+      runas: root
+  ApplicationStart:
+    - location: devops/start-server.sh
+      timeout: 3600
+      runas: root

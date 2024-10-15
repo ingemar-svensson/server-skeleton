@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "lib": ["es2015"],
+    "rootDir": "./",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/",
+    "test/**/*",
+  ]
+}

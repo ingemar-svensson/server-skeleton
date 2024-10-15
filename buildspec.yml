@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Installing yarn"
+      - "npm install -g yarn"
+  pre_build:
+    commands:
+      - echo "Installing dependencies"
+      - "yarn install --force"
+  build:
+    commands:
+      - echo "Building"
+      - "yarn build"
+artifacts:
+  files:
+    - dist/**/*
+    - package.json
+    - .env
+    - devops/**/*
+    - Procfile
+    - buildspec.yml
+    - appspec.yml
+    - yarn.lock
